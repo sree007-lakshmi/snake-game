@@ -89,7 +89,7 @@ document.getElementById('startBtn').addEventListener('click', () => {
   if (!location) return alert("Please enter a city name!");
 
   // OpenWeatherMap API call
-  const apiKey = "API_KEY"; // 🔑 Replace with your real OpenWeatherMap API key
+  const apiKey = "YOUR_API_KEY"; // 🔑 Replace with your real OpenWeatherMap API key
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
 
   fetch(apiUrl)
@@ -173,4 +173,5 @@ function startSnakeGame(speed) {
     update();
   }, speed);
 }
+
 
